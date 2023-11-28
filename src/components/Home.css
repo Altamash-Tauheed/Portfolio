@@ -134,3 +134,86 @@
   background-color: #34495e;
   transition: background-color 0.3s;
 }
+
+
+/* for profile picture */
+
+.top{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.perspective {
+  width: 100%;
+  perspective: 1000px;
+}
+
+.cards {
+  width: 45%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 70px 70px 63px -60px #26a4ee;
+  transform-style: preserve-3d;
+  transition: transform 0.05s linear;
+}
+
+.cards .thumb{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.cards .thumb:after{
+  background: inherit;
+  content: '';
+  display: block;
+  position: absolute;
+  left: -60px;
+  top: 40px;
+  width: 100%;
+  height: 108%;
+  z-index: -1;
+  filter: blur(55px);
+}
+
+.cards .logo1{
+  position: absolute;
+  width: 20%;
+  border-radius: 6px;
+  rotate: 15deg;
+  top: 0;
+  left: -60px;
+  transform: translateZ(80px);
+}
+.cards .logo2{
+  position: absolute;
+  width: 20%;
+  border-radius: 6px;
+  rotate: -10deg;
+  bottom: 80px;
+  left: -60px;
+  transform: translateZ(80px);
+}
+.cards .logo3{
+  position: absolute;
+  width: 20%;
+  border-radius: 6px;
+  rotate: -15deg;
+  top: 50px;
+  right: -28px;
+  transform: translateZ(35px);
+}
+.cards .logo4{
+  position: absolute;
+  width: 20%;
+  border-radius: 6px;
+  rotate: 10deg;
+  bottom: 50px;
+  right: -28px;
+  transform: translateZ(35px);
+}

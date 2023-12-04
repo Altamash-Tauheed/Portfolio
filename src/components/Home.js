@@ -29,7 +29,7 @@ function Home() {
 
     // Remove the anchor element from the document
     document.body.removeChild(link);
-    
+  
   };
 
   const [style, setStyle] = useState({ transform: '', WebkitTransform: '', MozTransform: '' });

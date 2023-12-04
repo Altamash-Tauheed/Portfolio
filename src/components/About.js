@@ -1,4 +1,5 @@
 import React from "react";
+import aboutImage from "./aboutImage.jpg";
 
 function About() {
   const handleDownload = () => {
@@ -23,25 +24,17 @@ function About() {
     // Remove the anchor element from the document
     document.body.removeChild(link);
   };
+  
   return (
     <div>
       <section id="about">
         <div className="lg:flex pb-10 pt-16">
-          <div className="lg:flex-1">
-            <div className="flex justify-center items-center sm: flex flex-wrap ml-36 mt-20">
-              <img
-                className="px-8 py-8"
-                src="https://c4.wallpaperflare.com/wallpaper/216/42/445/lionel-messi-4k-hd-download-wallpaper-preview.jpg"
-                width={500}
-                alt="aboutPic1"
-              />
-              <img
-                className="px-8 py-8 relative bottom-24 right-40"
-                src="https://c4.wallpaperflare.com/wallpaper/44/959/737/cristiano-ronaldo-4k-portugal-footballer-wallpaper-thumb.jpg"
-                width={500}
-                alt="aboutPic2"
-              />
-            </div>
+          <div className="sm:m-6 md:m-24 lg:m-0 flex-1 flex justify-center items-center ">
+            <img 
+              className="p-4"
+              src={aboutImage}
+              alt="img"
+            />
           </div>
 
           <div className="lg:flex-1 lg:flex-col px-4">
@@ -68,19 +61,12 @@ function About() {
               everyone can understand, and I take pride in delivering projects
               on time and within budget. Outside of work, I'm a Mention a few
               personal interests or hobbies enthusiast and a strong advocate for
-              Any relevant cause or community involvement. I believe that a
-              well-rounded perspective not only enriches my life but also
-              contributes to my problem-solving abilities in the tech world. I
-              am excited about the opportunities that lie ahead and am eager to
-              collaborate on projects that push the boundaries of technology. If
-              you're looking for someone who is not only skilled but also
-              passionate about what they do, I'd love to be a part of your tech
-              journey.
+              Any relevant cause or community involvement.
             </p>
             <div className="grid grid-cols-2 gap-3">
               <div className="p-0">
                 <p className="font-semibold mb-0">NAME</p>
-                <p>Shadman Khan</p>
+                <p>Md Altamash Touheed</p>
               </div>
               <div className="p-0">
                 <p className="font-semibold mb-0">EDUCATION</p>
@@ -88,7 +74,7 @@ function About() {
               </div>
               <div className="p-0">
                 <p className="font-semibold mb-0">EMAIL</p>
-                <p>khanshadman7777@gmail.com</p>
+                <p>altamashtauheed501@gmail.com</p>
               </div>
               <div className="p-0">
                 <p className="font-semibold mb-0">EMPLOYMENT</p>

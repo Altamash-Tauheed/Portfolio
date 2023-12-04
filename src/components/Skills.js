@@ -1,4 +1,5 @@
 import React from "react";
+import backgroundImage from "./backgroundImage.png";
 
 function Skills() {
   const skillsData = [
@@ -78,15 +79,23 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="pt-10 pb-4 grid justify-center content-center bg-gray-700 "
+      className="pt-10 pb-4 grid justify-center content-center bg-[#021b38]"
     >
-      <h1 className="text-center text-blue-600 font-bold py-4">
-        <span className="text-white">My </span>Skills
+      <img
+              className="absolute z-0 w-full h-screen "
+              src={backgroundImage}
+              alt="img"
+            />
+      <h1 className="text-center text-[#26a4ee] z-1 text-3xl font-bold py-4">
+      <span className=" px-4"><ion-icon name="caret-forward"></ion-icon></span>
+      <span className="text-white">My </span>Skills
+      <span className="px-4"><ion-icon name="caret-back"></ion-icon></span>
+
       </h1>
       <div className="mb-2 grid grid-cols-2 gap-4 w-[px] sm:grid sm:grid-cols-3 sm:w-[600px] sm:h-[600px] sm:gap-4 lg:grid lg:grid-cols-4 lg:w-[800px] lg:h-[600px] lg:gap-4 ">
         {skillsData.map((skill) => (
           <div
-            className="rounded-md bg-gray-600 shadow-xl shadow-gray-900 hover:bg-yellow-500 cursor-default transition-transform transform hover:scale-110 hover:rotate-6"
+            className="rounded-md bg-gradient-to-r from-green-400 to-[#26a4ee] hover:from-pink-500 hover:to-yellow-500  shadow-xl shadow-gray-900  cursor-default transition-transform transform hover:scale-110 hover:rotate-3"
             key={skill.id}
           >
             <div className="grid justify-center mt-6 sm:mt-6 lg:mt-14  mb-2">

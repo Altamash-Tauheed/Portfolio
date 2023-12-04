@@ -46,11 +46,13 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-gray-800 pt-10">
+    <div className="bg-[#021b38] pt-8">
       <section id="projects">
-        <h1 className="text-center text-blue-600 font-bold py-4">
-          <span className="text-white">My </span>Projects
-        </h1>
+      <h1 className="text-center text-[#26a4ee] z-1 text-3xl font-bold py-4">
+      <span className=" px-4"><ion-icon name="caret-forward"></ion-icon></span>
+      <span className="text-white">My </span>Projects
+      <span className="px-4"><ion-icon name="caret-back"></ion-icon></span>
+      </h1>
         <div className="flex flex-wrap justify-center gap-4 ">
           {projectsData.map((project) => (
             <div
@@ -66,22 +68,23 @@ function Projects() {
                 src={project.image}
                 alt={project.name}
               />
-              <div className="flex flex-row">
-                <button className="bg-zinc-300 border-teal-700 border-2 text-black font-medium px-4 py-2 rounded-lg mt-2 mr-2 hover:bg-teal-500 transition-transform transform hover:scale-110">
+              <div className="flex flex-row absolute top-[232px] left-[8px]">
+                <button className="px-4 py-2 mb-2 mt-1 border border-white text-[#Ffffff] font-bold font-semibold rounded-md  hover:text-black hover:bg-white transition-transform duration-300 transform hover:scale-105">
                   LiveLink
                 </button>
-
+                <div className="border border-white w-[42px] h-[42px] mt-1 ml-2 rounded-md hover:bg-white transition-transform duration-300 transform hover:scale-105">
                 <a
                   href={project.github_link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="mt-2 ml-2 w-10 h-10 filter invert transition-transform transform hover:scale-125 duration-300"
+                    className=" w-9 pt-1 pl-1 filter invert hover:filter-none"
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                     alt="GitHub"
                   />
                 </a>
+                </div> 
               </div>
               <div className="mt-3 text-white">
                 <strong>TECH STACK : </strong>

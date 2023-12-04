@@ -54,16 +54,6 @@ function Navbar() {
           </li>
           <li className="md:ml-8 text-xl md:my-0 my-6">
             <Link
-              to="about"
-              smooth={true}
-              duration={200}
-              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-500 no-underline"
-            >
-              About
-            </Link>
-          </li>
-          <li className="md:ml-8 text-xl md:my-0 my-6">
-            <Link
               to="skills"
               smooth={true}
               duration={200}
@@ -72,6 +62,17 @@ function Navbar() {
               Skills
             </Link>
           </li>
+          <li className="md:ml-8 text-xl md:my-0 my-6">
+            <Link
+              to="about"
+              smooth={true}
+              duration={200}
+              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-500 no-underline"
+            >
+              About
+            </Link>
+          </li>
+          
           <li className="md:ml-8 text-xl md:my-0 my-6">
             <Link
               to="projects"

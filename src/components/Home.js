@@ -82,7 +82,7 @@ function Home() {
             />
           <div className="lg:flex-1 mt-6 pb-8 lg:pb-0 z-1">
             <div className="lg:ml-24">
-              <h2 className="mt-8 mb-2 text-white font-bold md:text-2xl lg:text-3xl">
+              <h2 className="mt-8 mb-2 text-white font-bold md:text-2xl lg:text-3xl animate-bounce">
                 Hello, I'm
               </h2>
               <h1 className=" text-white font-extrabold md:text-6xl lg:text-7xl">
@@ -120,22 +120,22 @@ function Home() {
               alt="img"
                 />
                 <img
-              className="logo1"
+              className="logo1 animate-bounce"
               src={react}
               alt="img"
                 />
                 <img
-              className="logo2"
+              className="logo2 animate-bounce"
               src={javascript}
               alt="img"
                 />
                 <img
-              className="logo3"
+              className="logo3 animate-bounce"
               src={mongodb}
               alt="img"
                 />
                 <img
-              className="logo4"
+              className="logo4 animate-bounce"
               src={tailwind}
               alt="img"
                 />

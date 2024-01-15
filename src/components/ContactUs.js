@@ -10,17 +10,23 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_i072z9o",
-        "template_7adl373",
+        "service_xvvcghw",
+        "template_fdjee34",
         form.current,
-        "0SgWQmcO4Tvr5YxaX"
+        "X0LqtUwTB-MwT3nOI"
       )
       .then(
         (result) => {
           console.log(result.text);
+          // Reset form fields
+          form.current.reset();
+          // Show success alert
+          alert("Email sent successfully");
         },
         (error) => {
           console.log(error.text);
+          // Show error alert
+          alert("Error sending email");
         }
       );
   };
@@ -58,7 +64,7 @@ export const ContactUs = () => {
                 className="w-full my-2 p-2 border-0 rounded-md text-white bg-[#021b38] focus:outline-none focus:ring focus:border-blue-300"
                 type="text"
                 placeholder="Name"
-                name="to_name"
+                name="from_name"
               />
               <input
                 className="w-full my-2 p-2 border-0 rounded-md bg-[#021b38] text-white focus:outline-none focus:ring focus:border-blue-300"

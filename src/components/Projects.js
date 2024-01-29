@@ -42,6 +42,7 @@ function Projects() {
       des_2:
         "Achieved accurate facial detection, real-time recognition, and secure user data storage and retrieval.",
     },
+    
     // Add more projects
   ];
 
@@ -56,37 +57,41 @@ function Projects() {
         <div className="flex flex-wrap justify-center gap-4 ">
           {projectsData.map((project) => (
             <div
-              className="w-[400px] transition-transform transform hover:scale-105"
+              className="w-[350px] h-[500px] mb-10 transition-transform transform hover:scale-105 backdrop-blur-xl bg-[#26a4ee]/10 "
               key={project.id}
             >
+              <div className="w-[300px] mt-6 ml-6">
               <h3 className="text-white font-semibold text-lg">
                 {project.name}
               </h3>
 
               <img
-                className="w-[400px] h-[250px] mb-3 border-1 border-white shadow-xl shadow-blue-600"
+                className="w-[300px] h-[180px] mb-3 border-1 border-white shadow-xl shadow-blue-600"
                 src={project.image}
                 alt={project.name}
               />
-              <div className="flex flex-row absolute top-[232px] left-[8px]">
-                <button className="px-4 py-2 mb-2 mt-1 border border-white text-[#Ffffff] font-bold font-semibold rounded-md  hover:text-black hover:bg-white transition-transform duration-300 transform hover:scale-105">
-                  LiveLink
+              <div className="flex flex-row absolute top-[200px] left-[30px] gap-2">
+                <button className="h-[35px] w-[35px] px-1 pt-1 text-2xl border border-white text-[#Ffffff] font-bold font-semibold rounded-md  hover:text-black hover:bg-white transition-transform duration-300 transform hover:scale-105">
+                <ion-icon className="" name="link"></ion-icon>
                 </button>
-                <div className="border border-white w-[42px] h-[42px] mt-1 ml-2 rounded-md hover:bg-white transition-transform duration-300 transform hover:scale-105">
+                <button className="h-[35px] w-[35px] px-1 pt-1 text-2xl border border-white text-[#Ffffff] font-bold font-semibold rounded-md  hover:text-black hover:bg-white transition-transform duration-300 transform hover:scale-105">
+                <ion-icon name="logo-github"></ion-icon>
+                </button>
+                {/* <div className="border border-white w-[35px] h-[35px] ml-2 rounded-md hover:bg-white transition-transform duration-300 transform hover:scale-105">
                 <a
                   href={project.github_link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    className=" w-9 pt-1 pl-1 filter invert hover:filter-none"
+                    className=" w-10 p-1 filter invert hover:filter-none"
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                     alt="GitHub"
                   />
                 </a>
-                </div> 
+                </div>  */}
               </div>
-              <div className="mt-3 text-white">
+              <div className="mt-3 text-white text-sm">
                 <strong>TECH STACK : </strong>
                 <p>{project.tech_used}</p>
                 <ul className="list-disc">
@@ -94,6 +99,7 @@ function Projects() {
                   <li>{project.des_2}</li>
                 </ul>
               </div>
+            </div>
             </div>
           ))}
         </div>

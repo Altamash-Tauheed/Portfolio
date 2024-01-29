@@ -217,3 +217,29 @@
   right: -28px;
   transform: translateZ(35px);
 }
+
+/* for bouncing patterns */
+.pattern .bubble{
+  position: absolute;
+  width: 5%;
+  top: 100px;
+  left: 15px;
+}
+.pattern .arrow{
+  position: absolute;
+  width: 5%;
+  top: 570px;
+  left: 150px;
+}
+.pattern .line{
+  position: absolute;
+  width: 5%;
+  top: 220px;
+  left: 700px;
+}
+.pattern .zigzag{
+  position: absolute;
+  width: 5%;
+  top: 150px;
+  right: 30px;
+}

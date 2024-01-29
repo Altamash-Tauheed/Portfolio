@@ -22,7 +22,7 @@ const HomeFooter = () => {
       </div>
       <div className="flex justify-center items-center gap-12">
         <a className="text-white text-2xl mt-2  -mb-2 hover:transform hover:scale-125"
-          href="https://github.com/ShadmanKhan10"
+          href="https://github.com/Altamash-Tauheed"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -31,7 +31,7 @@ const HomeFooter = () => {
         </a>
         <a
           className="text-white text-2xl mt-2  -mb-2 hover:transform hover:scale-125"
-          href="https://linkedin.com/in/shadman-khan-a0a5221b8"
+          href="https://www.linkedin.com/in/md-altamash-touheed-42a106212/"
           target="_blank"
           rel="noopener noreferrer"
         >

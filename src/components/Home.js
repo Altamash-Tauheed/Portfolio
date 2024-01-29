@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
 import profileimage from "./profilepic.jpg";
+
 import react from "./HomeLogo/react.png";
 import tailwind from "./HomeLogo/tailwind.jpg";
 import javascript from "./HomeLogo/javascript.png";
 import mongodb from "./HomeLogo/mongodb.png";
-import backgroundImage from "./backgroundImage.png";
+
+import backgroundImage from "./backgroundImage.jpg";
+
+import bubble from "./homeStyle/bubble.png";
+import arrow from "./homeStyle/arrow.png";
+import line from "./homeStyle/line.png";
+import zigzag from "./homeStyle/zigzag.png";
 
 function Home() {
   const handleDownload = () => {
@@ -47,6 +54,11 @@ function Home() {
       setStyle(newStyle);
     }
 
+    function handleMouseLeave() {
+      // Reset style to its initial state
+      setStyle({ transform: '', WebkitTransform: '', MozTransform: '' });
+    }
+
   const [text, setText] = useState("React.js");
   const texts = [
     "React.js",
@@ -80,6 +92,28 @@ function Home() {
               src={backgroundImage}
               alt="img"
             />
+        <div className="pattern ">
+        <img
+              className="bubble animate-bounce hidden lg:block"
+              src={bubble}
+              alt="img"
+                />
+        <img
+              className="arrow animate-bounce hidden lg:block"
+              src={arrow}
+              alt="img"
+                />
+        <img
+              className="line animate-bounce hidden lg:block"
+              src={line}
+              alt="img"
+                />
+        <img
+              className="zigzag animate-bounce hidden lg:block"
+              src={zigzag}
+              alt="img"
+                />
+        </div>
           <div className="lg:flex-1 mt-6 pb-8 lg:pb-0 z-1">
             <div className="lg:ml-24">
               <h2 className="mt-8 mb-2 text-white font-bold md:text-2xl lg:text-3xl animate-bounce">
@@ -111,31 +145,31 @@ function Home() {
           </div>
 
           <div className="lg:flex-1 flex justify-center pt-24 lg:pt-20 z-1">
-            <div className="top" onMouseMove={handleMouseMove}>
+            <div className="top" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <div className="perspective">
                 <div className="cards" style={style}>
                 <img
-              className="thumb"
+              className="thumb "
               src={profileimage}
               alt="img"
                 />
                 <img
-              className="logo1 animate-bounce"
+              className="logo1"
               src={react}
               alt="img"
                 />
                 <img
-              className="logo2 animate-bounce"
+              className="logo2"
               src={javascript}
               alt="img"
                 />
                 <img
-              className="logo3 animate-bounce"
+              className="logo3"
               src={mongodb}
               alt="img"
                 />
                 <img
-              className="logo4 animate-bounce"
+              className="logo4"
               src={tailwind}
               alt="img"
                 />

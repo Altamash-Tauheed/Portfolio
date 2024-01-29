@@ -4,7 +4,7 @@ import aboutImage from "./aboutImage.jpg";
 function About() {
   const handleDownload = () => {
     // Path to your PDF file
-    const pdfPath = "/Shadman_Khan.pdf";
+    const pdfPath = "/Altamash_resume.pdf";
 
     // Create a new anchor element
     const link = document.createElement("a");
@@ -13,7 +13,7 @@ function About() {
     link.href = pdfPath;
 
     // Set the download attribute with the desired file name
-    link.download = "Shadman_Khan.pdf";
+    link.download = "/Altamash_resume.pdf";
 
     // Append the anchor element to the document
     document.body.appendChild(link);
@@ -83,7 +83,7 @@ function About() {
             </div>
 
             <button
-              className="font-semibold bg-blue-500 px-8 py-2 rounded-md text-white text-sm "
+              className="px-8 py-2 bg-[#26a4ee] text-[#Ffffff] font-bold text-base rounded-md  hover:text-[#26a4ee] hover:bg-white transition-transform duration-300 transform hover:scale-105 border-2 border-[#26a4ee]"
               onClick={handleDownload}
             >
               DOWNLOAD CV

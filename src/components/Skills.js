@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "./backgroundImage.png";
+import backgroundImage from "./backgroundImage.jpg";
 
 function Skills() {
   const skillsData = [
@@ -95,7 +95,7 @@ function Skills() {
       <div className="mb-2 grid grid-cols-2 gap-4 w-[px] sm:grid sm:grid-cols-3 sm:w-[600px] sm:h-[600px] sm:gap-4 lg:grid lg:grid-cols-4 lg:w-[800px] lg:h-[600px] lg:gap-4 ">
         {skillsData.map((skill) => (
           <div
-            className="rounded-md bg-gradient-to-r from-green-400 to-[#26a4ee] hover:from-pink-500 hover:to-yellow-500  shadow-xl shadow-gray-900  cursor-default transition-transform transform hover:scale-110 hover:rotate-3"
+            className="rounded-md backdrop-blur-sm bg-[#26a4ee]/5 hover:backdrop-blur-xl hover:bg-[#26a4ee]/10   shadow-xl shadow-gray-900  cursor-default transition-transform transform hover:scale-110 "
             key={skill.id}
           >
             <div className="grid justify-center mt-6 sm:mt-6 lg:mt-14  mb-2">

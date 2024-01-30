@@ -1,4 +1,17 @@
-import React from "react";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import './Project.css';
+
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules';
+
 
 function Projects() {
   const projectsData = [
@@ -42,7 +55,20 @@ function Projects() {
       des_2:
         "Achieved accurate facial detection, real-time recognition, and secure user data storage and retrieval.",
     },
-    
+
+    {
+      id: 4,
+      name: "TIN-DOG",
+      tech_used: "Html , Css , Bootstrap5 , JavaScript",
+      image:
+        "https://private-user-images.githubusercontent.com/126339865/300740748-fee20dd0-adfe-4f04-aadd-3ec3e906586e.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY2MDU1MTUsIm5iZiI6MTcwNjYwNTIxNSwicGF0aCI6Ii8xMjYzMzk4NjUvMzAwNzQwNzQ4LWZlZTIwZGQwLWFkZmUtNGYwNC1hYWRkLTNlYzNlOTA2NTg2ZS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEzMFQwOTAwMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NTgyMjE1MmJjZGI3ZGEyOWI5ZjExMmI1NDVmYWYyYWZmN2UwODY0MGI5MzFiMWZlMWFjMGQxMzQ4MDQ1YTk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Au_29cLpDCRUHYT6fYJeH00Je6F1DcLHd1zBsePDnKU",
+      link: "https://altamash-tauheed.github.io/TinDog/",
+      github_link: "https://github.com/Altamash-Tauheed/TinDog",
+      des_1:
+        " Implemented robust security measures, including password encryption and token-based authentication, ensuring the utmost safety for user data",
+      des_2:
+        "Achieved accurate facial detection, real-time recognition, and secure user data storage and retrieval.",
+    },
     // Add more projects
   ];
 
@@ -54,8 +80,34 @@ function Projects() {
       <span className="text-white">My </span>Projects
       <span className="px-4"><ion-icon name="caret-back"></ion-icon></span>
       </h1>
-        <div className="flex flex-wrap justify-center gap-4 ">
+        {/* <div className="flex flex-wrap justify-center gap-4 "> */}
+        <Swiper
+        // slidesPerView={3}
+        // spaceBetween={-60}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: -30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: -50,
+          },
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
           {projectsData.map((project) => (
+            <SwiperSlide>
             <div
               className="w-[350px] h-[500px] mb-10 transition-transform transform hover:scale-105 backdrop-blur-xl bg-[#26a4ee]/10 "
               key={project.id}
@@ -71,12 +123,12 @@ function Projects() {
                 alt={project.name}
               />
               <div className="flex flex-row absolute top-[200px] left-[30px] gap-2">
-                <button className="h-[35px] w-[35px] px-1 pt-1 text-2xl border border-white text-[#Ffffff] font-bold font-semibold rounded-md  hover:text-black hover:bg-white transition-transform duration-300 transform hover:scale-105">
-                <ion-icon className="" name="link"></ion-icon>
-                </button>
-                <button className="h-[35px] w-[35px] px-1 pt-1 text-2xl border border-white text-[#Ffffff] font-bold font-semibold rounded-md  hover:text-black hover:bg-white transition-transform duration-300 transform hover:scale-105">
+              <a href={project.link}><button className="h-[35px] w-[35px] px-1 pt-1 text-2xl border border-white text-[#Ffffff] font-bold font-semibold rounded-md  hover:text-black hover:bg-white transition-transform duration-300 transform hover:scale-105">
+                <ion-icon name="link"></ion-icon>
+                </button></a>
+                <a href={project.github_link}><button className="h-[35px] w-[35px] px-1 pt-1 text-2xl border border-white text-[#Ffffff] font-bold font-semibold rounded-md  hover:text-black hover:bg-white transition-transform duration-300 transform hover:scale-105">
                 <ion-icon name="logo-github"></ion-icon>
-                </button>
+                </button></a>
                 {/* <div className="border border-white w-[35px] h-[35px] ml-2 rounded-md hover:bg-white transition-transform duration-300 transform hover:scale-105">
                 <a
                   href={project.github_link}
@@ -101,8 +153,10 @@ function Projects() {
               </div>
             </div>
             </div>
+            </SwiperSlide>
           ))}
-        </div>
+          </Swiper>
+        {/* </div> */}
       </section>
     </div>
   );

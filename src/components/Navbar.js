@@ -47,7 +47,7 @@ function Navbar() {
               to="home"
               smooth={true}
               duration={200}
-              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-500 no-underline"
+              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-100 no-underline"
             >
               Home
             </Link>
@@ -57,7 +57,7 @@ function Navbar() {
               to="skills"
               smooth={true}
               duration={200}
-              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-500 no-underline"
+              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-100 no-underline"
             >
               Skills
             </Link>
@@ -67,7 +67,7 @@ function Navbar() {
               to="about"
               smooth={true}
               duration={200}
-              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-500 no-underline"
+              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-100 no-underline"
             >
               About
             </Link>
@@ -78,7 +78,7 @@ function Navbar() {
               to="projects"
               smooth={true}
               duration={200}
-              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-500 no-underline"
+              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-100 no-underline"
             >
               Projects
             </Link>
@@ -88,7 +88,7 @@ function Navbar() {
               to="contact"
               smooth={true}
               duration={200}
-              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-500 no-underline"
+              className="font-semibold text-[#Ffffff] hover:text-[#26a4ee] duration-100 no-underline"
             >
               Contact
             </Link>

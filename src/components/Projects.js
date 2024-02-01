@@ -59,15 +59,15 @@ function Projects() {
     {
       id: 4,
       name: "TIN-DOG",
-      tech_used: "Html , Css , Bootstrap5 , JavaScript",
+      tech_used: "Html , Css , Bootstrap , JavaScript",
       image:
         "https://private-user-images.githubusercontent.com/126339865/300740748-fee20dd0-adfe-4f04-aadd-3ec3e906586e.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY2MDU1MTUsIm5iZiI6MTcwNjYwNTIxNSwicGF0aCI6Ii8xMjYzMzk4NjUvMzAwNzQwNzQ4LWZlZTIwZGQwLWFkZmUtNGYwNC1hYWRkLTNlYzNlOTA2NTg2ZS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEzMFQwOTAwMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NTgyMjE1MmJjZGI3ZGEyOWI5ZjExMmI1NDVmYWYyYWZmN2UwODY0MGI5MzFiMWZlMWFjMGQxMzQ4MDQ1YTk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Au_29cLpDCRUHYT6fYJeH00Je6F1DcLHd1zBsePDnKU",
       link: "https://altamash-tauheed.github.io/TinDog/",
       github_link: "https://github.com/Altamash-Tauheed/TinDog",
       des_1:
-        " Implemented robust security measures, including password encryption and token-based authentication, ensuring the utmost safety for user data",
+        " Tin-dog is a unique web application that serves as a Tinder-inspired platform exclusively for dogs. This innovative project allows dog owners to  make connections.",
       des_2:
-        "Achieved accurate facial detection, real-time recognition, and secure user data storage and retrieval.",
+        "Built with Bootstrap, HTML5, and CSS3, Tin-dog boasts a responsive and visually appealing design.",
     },
     // Add more projects
   ];

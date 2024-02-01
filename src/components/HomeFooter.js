@@ -21,7 +21,7 @@ const HomeFooter = () => {
         </div> */}
       </div>
       <div className="flex justify-center items-center gap-12">
-        <a className="text-white text-2xl mt-2  -mb-2 hover:transform hover:scale-125"
+        <a className="text-white text-2xl mt-2  -mb-2 hover:transform hover:scale-125 hover:-translate-y-1"
           href="https://github.com/Altamash-Tauheed"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,7 +30,7 @@ const HomeFooter = () => {
           
         </a>
         <a
-          className="text-white text-2xl mt-2  -mb-2 hover:transform hover:scale-125"
+          className="text-white text-2xl mt-2  -mb-2 hover:transform hover:scale-125 hover:-translate-y-1"
           href="https://www.linkedin.com/in/md-altamash-touheed-42a106212/"
           target="_blank"
           rel="noopener noreferrer"
@@ -39,7 +39,7 @@ const HomeFooter = () => {
         </a>
 
         <a 
-          className="text-white text-2xl mt-2  -mb-2 hover:transform hover:scale-125" 
+          className="text-white text-2xl mt-2  -mb-2 hover:transform hover:scale-125 hover:-translate-y-1" 
           href="https://gmail.com" 
           target="_blank" 
           rel="noopener noreferrer"

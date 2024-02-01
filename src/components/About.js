@@ -29,7 +29,7 @@ function About() {
     <div>
       <section id="about">
         <div className="lg:flex pb-10 pt-16">
-          <div className="sm:m-6 md:m-24 lg:m-0 flex-1 flex justify-center items-center ">
+          <div className="sm:m-6 md:m-24 lg:m-0 flex-1 flex justify-center items-center -skew-y-3 hover:skew-y-3 duration-1000">
             <img 
               className="p-4"
               src={aboutImage}
@@ -83,7 +83,7 @@ function About() {
             </div>
 
             <button
-              className="px-8 py-2 bg-[#26a4ee] text-[#Ffffff] font-bold text-base rounded-md  hover:text-[#26a4ee] hover:bg-white transition-transform duration-300 transform hover:scale-105 border-2 border-[#26a4ee]"
+              className="px-8 py-2 bg-[#26a4ee] text-[#Ffffff] font-bold text-base rounded-md  hover:text-[#26a4ee] hover:bg-white transition-transform duration-300 transform hover:scale-105 border border-inherit"
               onClick={handleDownload}
             >
               DOWNLOAD CV

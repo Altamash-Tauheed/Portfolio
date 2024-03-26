@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "./backgroundImage.jpg";
+import Galaxy from "./Galaxy.mp4";
 
 function Skills() {
   const skillsData = [
@@ -78,14 +78,18 @@ function Skills() {
 
   return (
     <div
-      id="skills"
-      className="pt-10 pb-4 grid justify-center content-center bg-[#021b38]"
-    >
-      <img
-              className="absolute z-0 w-full h-screen "
-              src={backgroundImage}
+     id="skills" 
+    className="bg-[#021b38]">
+      <video
+              className=" absolute z-0 w-screen h-dvh object-cover hidden lg:block"
+              src={Galaxy} autoPlay loop muted
               alt="img"
             />
+    <div
+      
+      className="pt-6 pb-4 grid justify-center content-center"
+    >
+      
       <h1 className="text-center text-[#26a4ee] z-1 text-3xl font-bold py-4">
       <span className=" px-4"><ion-icon name="caret-forward"></ion-icon></span>
       <span className="text-white">My </span>Skills
@@ -95,7 +99,7 @@ function Skills() {
       <div className="mb-2 grid grid-cols-2 gap-4 w-[px] sm:grid sm:grid-cols-3 sm:w-[600px] sm:h-[600px] sm:gap-4 lg:grid lg:grid-cols-4 lg:w-[800px] lg:h-[600px] lg:gap-4 ">
         {skillsData.map((skill) => (
           <div
-            className="rounded-md backdrop-blur-sm bg-[#26a4ee]/5 hover:backdrop-blur-xl hover:bg-[#26a4ee]/10   shadow-xl shadow-gray-900  cursor-default transition-transform transform hover:scale-110 "
+            className="rounded-md backdrop-blur-sm bg-white/10 hover:backdrop-blur-md hover:bg-black/0    cursor-default transition-transform transform hover:scale-125 "
             key={skill.id}
           >
             <div className="grid justify-center mt-6 sm:mt-6 lg:mt-14  mb-2">
@@ -111,6 +115,7 @@ function Skills() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

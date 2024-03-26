@@ -12,6 +12,9 @@ import './Project.css';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
+//import background
+import Galaxy from "./Galaxy.mp4";
+
 
 function Projects() {
   const projectsData = [
@@ -61,7 +64,7 @@ function Projects() {
       name: "TIN-DOG",
       tech_used: "Html , Css , Bootstrap , JavaScript",
       image:
-        "https://private-user-images.githubusercontent.com/126339865/300740748-fee20dd0-adfe-4f04-aadd-3ec3e906586e.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY2MDU1MTUsIm5iZiI6MTcwNjYwNTIxNSwicGF0aCI6Ii8xMjYzMzk4NjUvMzAwNzQwNzQ4LWZlZTIwZGQwLWFkZmUtNGYwNC1hYWRkLTNlYzNlOTA2NTg2ZS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEzMFQwOTAwMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NTgyMjE1MmJjZGI3ZGEyOWI5ZjExMmI1NDVmYWYyYWZmN2UwODY0MGI5MzFiMWZlMWFjMGQxMzQ4MDQ1YTk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Au_29cLpDCRUHYT6fYJeH00Je6F1DcLHd1zBsePDnKU",
+        "https://repository-images.githubusercontent.com/351409525/51bcca45-1618-4148-b2a2-e787f3991f72",
       link: "https://altamash-tauheed.github.io/TinDog/",
       github_link: "https://github.com/Altamash-Tauheed/TinDog",
       des_1:
@@ -73,13 +76,22 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-[#021b38] pt-8">
+    <div className=" pt-8">
+      
       <section id="projects">
+        <div className='z-10'>
+        <video
+              className=" absolute -z-10 w-screen h-1/6 object-cover "
+              src={Galaxy} autoPlay loop muted
+              alt="img"
+            />
       <h1 className="text-center text-[#26a4ee] z-1 text-3xl font-bold py-4">
       <span className=" px-4"><ion-icon name="caret-forward"></ion-icon></span>
       <span className="text-white">My </span>Projects
       <span className="px-4"><ion-icon name="caret-back"></ion-icon></span>
       </h1>
+      
+      </div>
         {/* <div className="flex flex-wrap justify-center gap-4 "> */}
         <Swiper
         // slidesPerView={3}
@@ -109,7 +121,7 @@ function Projects() {
           {projectsData.map((project) => (
             <SwiperSlide>
             <div
-              className="w-[350px] h-[500px] mb-10 transition-transform transform hover:scale-105 backdrop-blur-xl bg-[#26a4ee]/10 "
+              className="w-[350px] h-[500px] mb-10 transition-transform transform hover:scale-105 backdrop-blur-sm bg-white/5  hover:bg-white/10 "
               key={project.id}
             >
               <div className="w-[300px] mt-6 ml-6">
@@ -118,7 +130,7 @@ function Projects() {
               </h3>
 
               <img
-                className="w-[300px] h-[180px] mb-3 border-1 border-white shadow-xl shadow-blue-600"
+                className="w-[300px] h-[180px] mb-3 border-1 border-white "
                 src={project.image}
                 alt={project.name}
               />
